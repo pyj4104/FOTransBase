@@ -13,8 +13,8 @@ Trans.egg-info/requires.txt
 Trans.egg-info/top_level.txt
 trans/__init__.py
 trans/tests.py
-trans/Base/CRUDBase.py
-trans/Base/__init__.py
-trans/Dialogue/__init__.py
-trans/Dialogue/view.py
 trans/Flags/__init__.py
+trans/Model/__init__.py
+trans/Tools/CRUD.py
+trans/Tools/Salt.py
+trans/Tools/__init__.py
