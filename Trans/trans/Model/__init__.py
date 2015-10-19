@@ -47,7 +47,6 @@ class Dialogue(Base):
     notes = Column("Notes", Text)
     speechChallenge = Column("SpeechChallenge", Text)
 
-
 class TextType(Base):
     __tablename__ = "TextType"
     id = Column("ID", Integer, primary_key=True, autoincrement=True)
