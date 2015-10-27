@@ -1,4 +1,4 @@
-#!/Users/yeounjunpark/Desktop/CurrentWork/FOTrans/FOTransBase/bin/python
+#!/Users/yeounjunpark/Desktop/CurrentWork/FOTrans/FOTransBaseBE/bin/python3.4
 # EASY-INSTALL-ENTRY-SCRIPT: 'pyramid==1.6a2','console_scripts','pserve'
 __requires__ = 'pyramid==1.6a2'
 import sys

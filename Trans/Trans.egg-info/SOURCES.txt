@@ -13,8 +13,9 @@ Trans.egg-info/requires.txt
 Trans.egg-info/top_level.txt
 trans/__init__.py
 trans/tests.py
-trans/Flags/__init__.py
-trans/Model/__init__.py
-trans/Tools/CRUD.py
-trans/Tools/Salt.py
-trans/Tools/__init__.py
+trans/views.py
+trans/static/pyramid-16x16.png
+trans/static/pyramid.png
+trans/static/theme.css
+trans/static/theme.min.css
+trans/templates/mytemplate.pt

@@ -1,6 +1,6 @@
 import unittest
+
 from pyramid import testing
-from trans.Dialogue.DialogueView import DialogueView
 
 class ViewTests(unittest.TestCase):
     def setUp(self):
@@ -9,13 +9,10 @@ class ViewTests(unittest.TestCase):
     def tearDown(self):
         testing.tearDown()
 
-    def test_my_view(self):
+    def test_cities(self):
+        from .views import get_city
+        from .views import CITIES
         request = testing.DummyRequest()
-        createTest = DialogueView.create(request)
-        readTest = DialogueView.read(request)
-        updateTest = DialogueView.update(request)
-        deleteTest = DialogueView.delete(request)
-        self.assertEqual(createTest['test'], 'createSuccess')
-        self.assertEqual(readTest['test'], 'readSuccess')
-        self.assertEqual(updateTest['test'], 'updateSuccess')
-        self.assertEqual(deleteTest['test'], 'deleteSuccess')
+        request['name'] = "Paris"
+        info = get_city(request)
+        print(info["name"])
