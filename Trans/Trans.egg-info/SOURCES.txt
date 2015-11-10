@@ -11,11 +11,11 @@ Trans.egg-info/entry_points.txt
 Trans.egg-info/not-zip-safe
 Trans.egg-info/requires.txt
 Trans.egg-info/top_level.txt
+trans/DBInitScript.py
 trans/__init__.py
+trans/models.py
 trans/tests.py
 trans/views.py
-trans/static/pyramid-16x16.png
-trans/static/pyramid.png
-trans/static/theme.css
-trans/static/theme.min.css
-trans/templates/mytemplate.pt
+trans/Core/AutoHeader.py
+trans/Core/Salt.py
+trans/Core/__init__.py

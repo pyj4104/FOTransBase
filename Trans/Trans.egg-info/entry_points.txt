@@ -1,3 +1,5 @@
       [paste.app_factory]
       main = trans:main
+      [console_scripts]
+      initDB = trans.DBInitScript:main
       

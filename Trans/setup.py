@@ -10,9 +10,11 @@ with open(os.path.join(here, 'CHANGES.txt')) as f:
 
 requires = [
     'pyramid',
-    'pyramid_chameleon',
     'pyramid_debugtoolbar',
     'waitress',
+    'sqlalchemy',
+    'zope.sqlalchemy',
+    'pymysql'
     ]
 
 setup(name='Trans',
@@ -25,8 +27,8 @@ setup(name='Trans',
         "Topic :: Internet :: WWW/HTTP",
         "Topic :: Internet :: WWW/HTTP :: WSGI :: Application",
         ],
-      author='',
-      author_email='',
+      author='Megaton Translation Team',
+      author_email='pyj4104@naver.com',
       url='',
       keywords='web pyramid pylons',
       packages=find_packages(),
@@ -38,5 +40,7 @@ setup(name='Trans',
       entry_points="""\
       [paste.app_factory]
       main = trans:main
+      [console_scripts]
+      initDB = trans.DBInitScript:main
       """,
       )
